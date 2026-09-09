@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Amit Gautam">
+  <rect width="200" height="200" rx="10" fill="#f1eee4"/>
+  <rect x="1" y="1" width="198" height="198" rx="9" fill="none" stroke="#e1ded4" stroke-width="1.5"/>
+  <text x="100" y="122" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="600" fill="#1c1e22" text-anchor="middle">AG</text>
+</svg>

@@ -244,7 +244,24 @@ h2.section-title {
 /* ---------- Hero ---------- */
 .hero { padding: 56px 0 64px; }
 
-.hero .eyebrow { margin-bottom: 18px; }
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 4px;
+}
+
+.avatar {
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  background: var(--surface);
+}
+
+.hero .eyebrow { margin-bottom: 10px; }
 
 .hero h1 {
   font-size: clamp(1.9rem, 5vw, 2.5rem);
@@ -573,6 +590,8 @@ footer a:hover { color: var(--accent); }
   .spec-row { grid-template-columns: 1fr; gap: 4px; }
   section { padding: 52px 0; }
   .hero { padding: 40px 0 48px; }
+  .hero-header { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .avatar { width: 88px; height: 88px; }
 }
 
 @media (max-width: 420px) {

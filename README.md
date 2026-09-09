@@ -8,10 +8,11 @@ plain HTML/CSS/JS (no build step, no framework, no dependencies).
 ```
 .
 ├── index.html          # all page content/sections
-├── css/style.css        # styling (dark theme, responsive)
-├── js/main.js            # nav toggle, scroll-reveal, active-link highlighting
+├── css/style.css        # styling (light/dark, responsive)
+├── js/main.js            # nav toggle, active-link highlighting
 ├── assets/
-│   └── Amit_Gautam_Resume.pdf   # downloadable résumé (linked from the hero + nav)
+│   ├── Amit_Gautam_Resume.pdf   # downloadable résumé (linked from the hero)
+│   └── avatar-placeholder.svg   # monogram shown until a real photo is added
 └── vercel.json           # clean URLs config for Vercel
 ```
 
@@ -45,3 +46,12 @@ vercel
 - Edit content directly in `index.html` (each résumé section is a `<section>`).
 - Colors/spacing/fonts live in `css/style.css` under the `:root` custom properties at the top.
 - Swap `assets/Amit_Gautam_Resume.pdf` to update the downloadable résumé.
+
+### Adding a real photo
+
+The hero currently shows a monogram placeholder (`assets/avatar-placeholder.svg`). To use a real photo:
+
+1. Add a square headshot (400×400px or larger works well) to `assets/avatar.jpg`.
+2. In `index.html`, find the `<img class="avatar" ...>` tag near the top of the hero section and change its `src` from `assets/avatar-placeholder.svg` to `assets/avatar.jpg`.
+
+The `.avatar` styling (size, rounded corners, border) in `css/style.css` applies automatically — no other changes needed.
