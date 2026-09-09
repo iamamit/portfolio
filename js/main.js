@@ -18,21 +18,6 @@ mobileMenu.querySelectorAll('a').forEach((link) => {
   });
 });
 
-// Scroll-reveal animation
-const revealEls = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-revealEls.forEach((el) => revealObserver.observe(el));
-
 // Active nav link highlighting
 const sections = document.querySelectorAll('main section[id]');
 const navAnchors = document.querySelectorAll('nav.links a');
@@ -52,12 +37,3 @@ const navObserver = new IntersectionObserver(
   { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
 );
 sections.forEach((s) => navObserver.observe(s));
-
-// Back-to-top button
-const backToTop = document.getElementById('backToTop');
-window.addEventListener('scroll', () => {
-  backToTop.classList.toggle('show', window.scrollY > 480);
-});
-backToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
