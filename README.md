@@ -16,5 +16,4 @@ assets/Amit_Gautam_Resume.pdf
 ```
 
 Run locally: `python3 -m http.server 8000`, then open http://localhost:8000.
-To use a photo, replace `assets/images/avatar.svg` (or point the two `avatar.svg` references in
-`index.html` at `assets/images/avatar.jpg`).
+Photo: `assets/images/avatar.jpg` (the favicon is `assets/images/avatar.svg`). Theme colour: the variables at the top of `assets/css/amit.css`.
