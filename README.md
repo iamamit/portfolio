@@ -12,8 +12,13 @@ assets/css/style.css       vCard template styles
 assets/css/amit.css        my additions: fonts, terminal cards, stats, stack list, project text
 assets/js/script.js        tabs, sidebar, project filter, contact form (opens the visitor's email app)
 assets/images/             avatar and terminal-style project covers (SVG)
-assets/Amit_Gautam_Resume.pdf
 ```
 
 Run locally: `python3 -m http.server 8000`, then open http://localhost:8000.
 Photo: `assets/images/avatar.jpg` (the favicon is `assets/images/avatar.svg`). Theme colour: the variables at the top of `assets/css/amit.css`.
+
+## Resume
+
+`resume/Amit_Gautam_Resume.pdf` is the file every "Download resume" link serves.
+To update it: replace that PDF (keep the name), or edit `resume/resume.html` and run
+`resume/build.sh`, then commit and push. Vercel deploys `main` automatically.

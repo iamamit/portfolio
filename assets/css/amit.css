@@ -85,3 +85,12 @@ a.project-card:hover img { transform: scale(1.05); }
 .post-foot { color: var(--light-gray-70); font-size: 12px; border-top: 1px solid var(--jet); padding-top: 12px; }
 .contacts-list .contact-link { white-space: normal; overflow: visible; text-overflow: clip; }
 .contacts-list .contact-link.email { font-size: 13px; }
+
+/* sidebar download button (all pages) */
+.sidebar-resume-btn { display: flex !important; align-items: center; justify-content: center; gap: 8px; margin: 0; padding: 10px 16px;
+  border-radius: 12px; color: var(--orange-yellow-crayola); background: var(--border-gradient-onyx); box-shadow: var(--shadow-2);
+  font-size: 14px; font-weight: 500; position: relative; z-index: 1; }
+.sidebar-resume-btn::before { content: ""; position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1; }
+.sidebar-resume-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+.sidebar-resume-btn ion-icon { font-size: 18px; }
+.sidebar-resume-btn span { display: inline !important; }
