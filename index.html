@@ -1,373 +1,347 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amit Gautam — Senior Backend Engineer</title>
-  <meta name="description" content="Amit Gautam — Senior Backend Engineer specializing in distributed systems, Java & Python, and AI/LLM integration. 7+ years building production microservices, event-driven pipelines, and AI developer agents." />
-  <meta name="theme-color" content="#faf9f5" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Amit Gautam — Senior Backend Engineer" />
-  <meta property="og:description" content="Distributed Systems & AI Integration · Java & Python · 7+ Years" />
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231c1e22'/%3E%3Ctext x='50' y='66' font-size='44' font-family='Georgia,serif' font-weight='600' fill='%23faf9f5' text-anchor='middle'%3EAG%3C/text%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Gautam · Senior Backend Engineer</title>
+  <meta name="description" content="Amit Gautam, senior backend engineer: distributed systems in Java and Python, event-driven platforms, and AI agents.">
+  <link rel="icon" href="./assets/images/avatar.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/amit.css">
 </head>
+
 <body>
+  <main>
 
-  <header class="nav">
-    <div class="nav-inner">
-      <a href="#home" class="brand">Amit Gautam</a>
-      <nav class="links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+    <!-- sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.svg" alt="Amit Gautam" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Amit Gautam">Amit Gautam</h1>
+          <p class="title mono">senior backend engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:amit99.ag@gmail.com" class="contact-link">amit99.ag@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://linkedin.com/in/amit-gautam-100" class="contact-link" target="_blank" rel="noopener">in/amit-gautam-100</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Braunschweig, Germany</address>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="airplane-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Open to</p>
+              <p class="contact-link">EU · UK · AU · NZ · UAE · Remote</p>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item"><a href="https://github.com/iamamit" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li class="social-item"><a href="https://linkedin.com/in/amit-gautam-100" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li class="social-item"><a href="mailto:amit99.ag@gmail.com" class="social-link" aria-label="Email"><ion-icon name="mail-outline"></ion-icon></a></li>
+          <li class="social-item"><a href="./assets/Amit_Gautam_Resume.pdf" class="social-link" target="_blank" aria-label="Resume PDF"><ion-icon name="document-text-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+
+      <!-- about -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <div class="terminal" aria-label="whoami">
+          <div class="terminal-bar"><span></span><span></span><span></span><em>~/amit</em></div>
+          <pre><span class="prompt">$</span> whoami
+<span class="out">senior backend engineer · 7+ years · java &amp; python</span>
+<span class="prompt">$</span> uptime
+<span class="out">walmart global tech → smart microwave sensors → building codit</span>
+<span class="prompt">$</span> <span class="typed" data-typed>cat about.md</span><span class="cursor"></span></pre>
+        </div>
+
+        <section class="about-text">
+          <p>
+            I build backend systems that stay up: Java 17-21/Spring Boot and Python/FastAPI services, Kafka event
+            pipelines, and workloads on Kubernetes. At Walmart I owned 20+ production microservices serving millions of
+            requests a day and built workflow platforms other teams adopted. Today I'm the sole backend developer at
+            Smart Microwave Sensors, where I also review every frontend and backend change.
+          </p>
+          <p>
+            On the side I build AI agents that do real work. My current one, codit, lives inside DaVinci Resolve and
+            edits video from plain-language requests. It meant reverse-engineering Resolve's timeline and audio
+            formats. I'm looking for senior backend or AI-backend roles and I'm open to relocating.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What I do</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="server-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend and APIs</h4>
+                <p class="service-item-text">Spring Boot and FastAPI services, REST and GraphQL, API contracts designed with the teams that consume them.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="git-network-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Distributed systems</h4>
+                <p class="service-item-text">Kafka and MQTT event pipelines, Camunda workflows, async processing that removes throughput bottlenecks.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="sparkles-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI agents</h4>
+                <p class="service-item-text">LLM agents with MCP tools, RAG and the Claude Agent SDK, built to act on real systems, not just chat.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="pulse-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Reliability</h4>
+                <p class="service-item-text">Kubernetes, CI/CD, Grafana and Prometheus; 3 years on senior on-call, dozens of P1s resolved.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="stats">
+          <ul class="stats-list">
+            <li><data value="7">7+</data><span>years building backends</span></li>
+            <li><data value="20">20+</data><span>production microservices</span></li>
+            <li><data value="10">10+</data><span>teams on my platforms</span></li>
+            <li><data value="40">~40%</data><span>faster P1 detection</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- resume -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Senior full stack engineer (backend-focused) · Smart Microwave Sensors</h4>
+              <span>Apr 2025 — Present · Braunschweig</span>
+              <p class="timeline-text">Sole backend developer; own architecture, API design and final review of all backend and frontend changes. Built the FastAPI backend from scratch: MQTT ingestion from 100+ road intersections with sub-200 ms latency to a React dashboard.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software engineer 3, backend platform · Walmart Global Tech</h4>
+              <span>Jan 2022 — Mar 2025 · Bengaluru</span>
+              <p class="timeline-text">Owned 20+ Java/Spring Boot microservices across supply chain, pricing and promotions. Built Wrangler and Execution Services (adopted by 10+ teams), moved 15-20+ endpoints to Kafka, and cut P1 detection time ~40% with Grafana/Prometheus.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Teaching assistant, algorithms · Coding Ninjas</h4>
+              <span>Aug 2021 — Dec 2021 · Remote</span>
+              <p class="timeline-text">Taught DSA in Python to 100+ students and working professionals; rated 4.9/5.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software engineering specialist, backend · Dassault Systèmes</h4>
+              <span>Jan 2020 — Jan 2022 · Pune</span>
+              <p class="timeline-text">Owned the CRS Framework REST APIs used by Ericsson, Melexis and Framatome; built TRM to replace IBM DOORS and set up the team's first GitLab CI.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Associate IT developer · Medtronic</h4>
+              <span>Feb 2019 — Jan 2020 · Bengaluru</span>
+              <p class="timeline-text">Built NCG, a Python/Flask tool that generates Cisco switch configs from templates, replacing a manual process across Medtronic's global network.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education and certifications</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.Tech, computer science · Harcourt Butler Technical University</h4>
+              <span>2013 — 2017 · Kanpur</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Camunda 7 Java Developer · BPMN 2.0 · Google Cloud Digital Leader</h4>
+              <span>Certified</span>
+              <p class="timeline-text">15 Walmart badges and multiple Impact Driver and Firefighter awards for P1 resolution.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">Stack</h3>
+          <ul class="stack-list content-card">
+            <li><span class="mono">lang</span> Java 17-21 · Python · TypeScript · SQL</li>
+            <li><span class="mono">backend</span> Spring Boot · FastAPI · Hibernate · REST · GraphQL</li>
+            <li><span class="mono">events</span> Kafka · MQTT · Celery · Redis · Camunda 7</li>
+            <li><span class="mono">ai</span> Claude Agent SDK · MCP · LangGraph · RAG · Qdrant · pgvector</li>
+            <li><span class="mono">infra</span> Kubernetes · Helm · Docker · GCP · GitHub Actions</li>
+            <li><span class="mono">observe</span> Grafana · Prometheus · tracing · on-call</li>
+          </ul>
+          <a class="resume-btn" href="./assets/Amit_Gautam_Resume.pdf" target="_blank"><ion-icon name="download-outline"></ion-icon><span>Download resume (PDF)</span></a>
+        </section>
+      </article>
+
+      <!-- projects -->
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>AI agents</button></li>
+            <li class="filter-item"><button data-filter-btn>Backend</button></li>
+            <li class="filter-item"><button data-filter-btn>Full stack</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>AI agents</button></li>
+              <li class="select-item"><button data-select-item>Backend</button></li>
+              <li class="select-item"><button data-select-item>Full stack</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="ai agents">
+              <div class="project-card">
+                <figure class="project-img"><img src="./assets/images/cover-codit.svg" alt="codit terminal session" loading="lazy"></figure>
+                <h3 class="project-title">codit · AI co-editor for DaVinci Resolve</h3>
+                <p class="project-category">AI agents · Python · Claude Agent SDK · MCP</p>
+                <p class="project-desc">Chat agent inside Resolve that cuts, grades, mixes and fixes audio from plain language. I reverse-engineered Resolve's timeline and Fairlight formats with a UI crawler, and the agent checks its own work against the rendered output.</p>
+              </div>
+            </li>
+            <li class="project-item active" data-filter-item data-category="ai agents">
+              <div class="project-card">
+                <figure class="project-img"><img src="./assets/images/cover-template-engine.svg" alt="template engine render" loading="lazy"></figure>
+                <h3 class="project-title">Video template engine</h3>
+                <p class="project-category">AI agents · JavaScript · headless Chrome · ffmpeg</p>
+                <p class="project-desc">A library of motion-graphics templates that render frame-exact to transparent video, described so an agent can find and fill one instead of writing animation code from scratch.</p>
+              </div>
+            </li>
+            <li class="project-item active" data-filter-item data-category="backend">
+              <div class="project-card">
+                <figure class="project-img"><img src="./assets/images/cover-comhub.svg" alt="comhub traffic stream" loading="lazy"></figure>
+                <h3 class="project-title">COMHUB · real-time traffic monitoring</h3>
+                <p class="project-category">Backend · FastAPI · MQTT · PostgreSQL</p>
+                <p class="project-desc">Taken from a blank repo to production, solo: MQTT ingestion from 100+ sensors, FastAPI backend and a live React/D3 dashboard with sub-200 ms latency.</p>
+              </div>
+            </li>
+            <li class="project-item active" data-filter-item data-category="backend">
+              <div class="project-card">
+                <figure class="project-img"><img src="./assets/images/cover-wrangler.svg" alt="wrangler deployment" loading="lazy"></figure>
+                <h3 class="project-title">Wrangler + Execution Services · Walmart</h3>
+                <p class="project-category">Backend · Java 17 · Spring Boot · Camunda 7 · Kafka</p>
+                <p class="project-desc">A Camunda 7 wrapper and a task-execution PaaS adopted by 10+ teams, cutting workflow integration from weeks to days at retail scale.</p>
+              </div>
+            </li>
+            <li class="project-item active" data-filter-item data-category="full stack">
+              <a class="project-card" href="https://thefilmproject.vercel.app" target="_blank" rel="noopener">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="open-outline"></ion-icon></div>
+                  <img src="./assets/images/cover-collabnow.svg" alt="CollabNow API" loading="lazy">
+                </figure>
+                <h3 class="project-title">CollabNow · social platform for film</h3>
+                <p class="project-category">Full stack · Java 21 · Spring Boot 3 · PostgreSQL</p>
+                <p class="project-desc">A LinkedIn-style platform for the Indian film industry, built solo: JWT + Google OAuth2, real-time messaging, 20+ endpoints. Live with 2,000+ profiles.</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- contact -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span><em>~/contact</em></div>
+          <pre><span class="prompt">$</span> ./reach-out --status
+<span class="out ok">open to senior backend and AI-backend roles · EU · UK · AU · NZ · UAE · remote</span>
+<span class="prompt">$</span> ./reach-out --fastest
+<span class="out">email → <a href="mailto:amit99.ag@gmail.com">amit99.ag@gmail.com</a>  ·  <a href="https://linkedin.com/in/amit-gautam-100" target="_blank" rel="noopener">linkedin</a></span></pre>
+        </div>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Send a message</h3>
+          <form class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Your name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Your email" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="What are you working on?" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send message</span>
+            </button>
+            <p class="form-note">Opens your email app with the message filled in.</p>
+          </form>
+        </section>
+      </article>
+
+      <footer class="site-footer mono">built on the open-source vCard template (MIT) · © Amit Gautam</footer>
     </div>
-    <div class="mobile-menu wrap" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
-
-  <main class="wrap">
-
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-header">
-        <!-- Swap the src below for assets/avatar.jpg once a real photo is added (see README). -->
-        <img class="avatar" src="assets/avatar-placeholder.svg" alt="Amit Gautam" width="112" height="112" />
-        <div>
-          <div class="eyebrow">Open to senior backend / AI-backend roles</div>
-          <h1>Amit Gautam</h1>
-          <p class="role">Senior Backend Engineer — Distributed Systems &amp; AI Integration — Java &amp; Python — 7+ Years</p>
-        </div>
-      </div>
-
-      <p class="lead">
-        I build distributed systems in Java 17-21/Spring Boot and Python/FastAPI — 20+ production microservices,
-        event-driven Kafka pipelines, Kubernetes-run services, and Camunda-based workflow automation. Most recently
-        I've been building an AI developer agent on LangGraph, FastMCP, and Qdrant-backed RAG.
-      </p>
-      <p class="hero-meta">
-        Based in Braunschweig, Germany. Open to relocation across the EU, UK, Australia/NZ, and UAE, and to remote roles.
-      </p>
-
-      <div class="hero-cta">
-        <a href="mailto:amit99.ag@gmail.com" class="btn btn-primary">Email me</a>
-        <a href="assets/Amit_Gautam_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download résumé</a>
-      </div>
-
-      <div class="hero-links" style="margin-top: 22px;">
-        <a href="https://github.com/iamamit" target="_blank" rel="noopener">github.com/iamamit</a>
-        <a href="https://linkedin.com/in/amit-gautam-100" target="_blank" rel="noopener">linkedin.com/in/amit-gautam-100</a>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="section-head">
-        <div class="eyebrow">About</div>
-        <h2 class="section-title">Backend-first, full-stack when it matters</h2>
-      </div>
-      <div class="about-grid">
-        <div>
-          <p>
-            Backend engineer with <strong>7+ years</strong> building distributed systems in
-            <strong>Java 17-21/Spring Boot</strong> and <strong>Python/FastAPI</strong>. Sole backend developer at
-            Smart Microwave Sensors in a full-stack role, and the team's final reviewer for all backend and frontend
-            code and design decisions.
-          </p>
-          <p>
-            Delivered <strong>20+ production microservices</strong> at Walmart, built event-driven pipelines with
-            <strong>Kafka</strong>, ran services on <strong>Kubernetes</strong>, and owned workflow automation with
-            <strong>Camunda 7</strong>. Built a multi-repo AI developer agent using <strong>LangGraph</strong>,
-            <strong>FastMCP</strong>, and Qdrant-backed <strong>RAG</strong>.
-          </p>
-          <p>
-            Strong on system design, security (JWT/OAuth2), observability, and CI/CD. Currently looking for senior
-            backend or AI-backend roles.
-          </p>
-        </div>
-        <div class="info-panel">
-          <dl>
-            <dt>Location</dt><dd>Braunschweig, Germany</dd>
-            <dt>Email</dt><dd><a href="mailto:amit99.ag@gmail.com">amit99.ag@gmail.com</a></dd>
-            <dt>GitHub</dt><dd><a href="https://github.com/iamamit" target="_blank" rel="noopener">iamamit</a></dd>
-            <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/amit-gautam-100" target="_blank" rel="noopener">amit-gautam-100</a></dd>
-            <dt>Relocation</dt><dd>EU, UK, AU, NZ, UAE, Remote</dd>
-          </dl>
-          <div class="core-stack">
-            Java 17-21 · Python · Spring Boot · FastAPI · Kafka · Kubernetes · PostgreSQL · LangGraph
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="section-head">
-        <div class="eyebrow">Skills</div>
-        <h2 class="section-title">Technical Skills</h2>
-      </div>
-
-      <dl class="spec-list">
-        <div class="spec-row">
-          <dt>Languages</dt>
-          <dd>Java 17-21, Python 3.x, JavaScript (ES6+), TypeScript, Shell Scripting</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Backend</dt>
-          <dd>Spring Boot, FastAPI, Hibernate, REST APIs, GraphQL, Microservices</dd>
-        </div>
-        <div class="spec-row">
-          <dt>AI &amp; LLM</dt>
-          <dd>LLM Integration, RAG, LangChain, LangGraph, FastMCP (MCP), pgvector, Qdrant, Tree-sitter (AST), Prompt Engineering, AI Agents, LangSmith, Groq, OpenAI Embeddings</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Cloud &amp; DevOps</dt>
-          <dd>GCP (BigQuery, GCS, Pub/Sub), Kubernetes (Helm), Docker, Docker Compose, GitHub Actions, GitLab CI, Maven, Gradle, Linux/Ubuntu, Nginx, Railway, Vercel</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Messaging</dt>
-          <dd>Apache Kafka, MQTT, Event-Driven Architecture, Async Processing, Celery, Redis</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Security</dt>
-          <dd>JWT, OAuth2, Sidecar-based Service Auth, Spring Security</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Workflow / BPM</dt>
-          <dd>Camunda 7 (Certified), BPMN 2.0 (Certified), Process Automation</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Databases</dt>
-          <dd>PostgreSQL, pgvector, MongoDB, Redis, BigQuery, SQL Server</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Observability</dt>
-          <dd>Grafana, Prometheus, LangSmith, Distributed Tracing, SLO/SLA, Incident Response</dd>
-        </div>
-        <div class="spec-row">
-          <dt>Practices</dt>
-          <dd>System Design, DDD, Agile/Scrum, TDD, Mentoring, Technical Leadership, Code Review, On-Call, OpenAPI/Swagger, Postman, Mockoon</dd>
-        </div>
-      </dl>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <div class="section-head">
-        <div class="eyebrow">Experience</div>
-        <h2 class="section-title">Work Experience</h2>
-      </div>
-
-      <div class="entry-list">
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>Senior Full Stack Engineer (Backend-Focused)</h3>
-            <span class="period">Apr 2025 – Present</span>
-          </div>
-          <div class="entry-org">Smart Microwave Sensors GmbH <span class="loc">— Braunschweig, Germany</span></div>
-          <ul>
-            <li>Sole backend developer on the team in a full-stack role; own backend architecture and API design, and handle major frontend development alongside the frontend engineers.</li>
-            <li>Own PR review and final architecture/API design decisions for the backend; onboarded and mentored a new hire on the backend stack and workflows.</li>
-            <li>Final reviewer for all frontend code and design changes, including sign-offs requested by the team lead; mentored two frontend engineers on code quality and design.</li>
-            <li>Own API contract design; gather requirements from downstream teams in daily syncs and translate them into REST API contracts before implementation.</li>
-            <li>Coordinate with the embedded Linux team on Yocto-level changes for solutions that can't run directly on-device due to security or platform constraints.</li>
-            <li>Built a browser-based MQTT traffic analysis tool (Python, React) extending MQTT Explorer with configurable-frequency message polling for real-time traffic analysis.</li>
-            <li>Built the FastAPI backend from scratch: MQTT ingestion from 100+ road intersections, REST APIs to a React dashboard, sub-200ms latency via MQTT broker tuning.</li>
-            <li>Owned the graph component service end to end: requirements gathering, POC, and the Recharts dashboard showing live per-intersection traffic data.</li>
-            <li>Built the D3.js/SVG map layer on Google Maps and Bing Maps for real-time sensor positions, lane markings, and detection zones.</li>
-            <li>Re-architected Mockoon so only explicitly listed APIs return mocked data, cutting frontend blocking time by roughly 2 sprints per feature cycle.</li>
-            <li>Follows TDD in the FastAPI backend, writing unit and integration tests with pytest; regression tests run in CI before every deploy.</li>
-            <li>Containerized services with Docker; set up a CI pipeline for automated tests and deployment on every merge to main.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>Software Engineer 3 – Backend Platform</h3>
-            <span class="period">Jan 2022 – Mar 2025</span>
-          </div>
-          <div class="entry-org">Walmart Global Tech <span class="loc">— Bengaluru, India</span></div>
-          <ul>
-            <li>Owned 20+ Java 17/Spring Boot microservices across supply chain, pricing, and promotions, serving millions of daily requests on Walmart.com.</li>
-            <li>Queried pricing data from the pricing team's GraphQL API as part of microservice integrations.</li>
-            <li>Built Wrangler, a Java/Camunda 7 wrapper adopted by 10+ teams; reduced workflow integration time from 2-3 weeks to a few days.</li>
-            <li>Built Execution Services, a Java PaaS between Camunda and external task processors, adopted by 10+ downstream teams for polling, execution, callbacks, and retry logic.</li>
-            <li>Replaced synchronous HTTP calls across 15-20+ service endpoints with Kafka-based async messaging, removing the main throughput bottleneck.</li>
-            <li>Implemented JWT/OAuth2-based authentication and sidecar containers for upstream/downstream service-to-service auth.</li>
-            <li>Set up GitHub Actions across 20+ services for automated tests, quality gates, and blue-green deploys; built Grafana/Prometheus dashboards that cut MTTD on P1 incidents by around 40%.</li>
-            <li>Practiced TDD across Java/Spring Boot microservices with JUnit; regression suites ran as GitHub Actions quality gates before every deploy.</li>
-            <li>Deployed and operated services on Kubernetes: wrote Helm charts, scaled pods on load, and debugged production issues like OOM kills and pod restarts.</li>
-            <li>Built Grafana dashboards on Kubernetes/Prometheus infra metrics tracking error and response counts across services.</li>
-            <li>Authored API/backend and Grafana dashboard documentation on Confluence, used as reference material by other engineering teams.</li>
-            <li>Built Cost Driver, a hackathon project forecasting grocery item prices from ingredient costs; presented at Walmart's hackathon showcase.</li>
-            <li>Wrote BigQuery queries to pull retail forecast data and fed workflow-generated data back into the data science team's forecasting models.</li>
-            <li>3 years on the senior on-call rotation; resolved or led resolution on dozens of P1 incidents and authored the domain runbooks. Multiple Impact Driver and Firefighter awards for P1 resolution speed.</li>
-          </ul>
-        </div>
-
-        <div class="entry compact">
-          <div class="entry-head">
-            <h3>Teaching Assistant – Algorithms (Part-Time)</h3>
-            <span class="period">Aug 2021 – Dec 2021</span>
-          </div>
-          <div class="entry-org">Coding Ninjas <span class="loc">— Remote</span></div>
-          <ul>
-            <li>Taught DSA in Python to 100+ students and working professionals. Received a 4.9/5 rating.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>Software Engineering Specialist – Backend</h3>
-            <span class="period">Jan 2020 – Jan 2022</span>
-          </div>
-          <div class="entry-org">Dassault Systèmes <span class="loc">— Pune, India</span></div>
-          <ul>
-            <li>Owned the CRS Framework REST APIs, used in production by Ericsson, Melexis, and Framatome.</li>
-            <li>Developed TRM, replacing IBM DOORS for requirements traceability across PLM lifecycle data; set up the team's first GitLab CI pipelines.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <h3>Associate IT Developer</h3>
-            <span class="period">Feb 2019 – Jan 2020</span>
-          </div>
-          <div class="entry-org">India Medtronic Pvt. Ltd. <span class="loc">— Bengaluru, India</span></div>
-          <ul>
-            <li>Built NCG, a Python/Flask tool auto-generating Cisco Switch 3850-48 configs from templates, replacing a manual process across Medtronic's global network infrastructure.</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="section-head">
-        <div class="eyebrow">Projects</div>
-        <h2 class="section-title">Key Projects</h2>
-      </div>
-
-      <div class="project-list">
-
-        <div class="project">
-          <div class="project-head">
-            <h3>Wrangler + Execution Services</h3>
-            <span class="org">Walmart Global Tech</span>
-          </div>
-          <ul>
-            <li>Wrangler: Java/Spring Boot wrapper over Camunda 7, adopted by 10+ teams — cut integration time from weeks to days.</li>
-            <li>Execution Services: Java PaaS connecting Camunda to external task processors with automated polling, execution, and failure recovery at retail scale.</li>
-          </ul>
-          <div class="stack-line">Java 17 · Spring Boot · Camunda 7 · PostgreSQL · Kafka · GitHub Actions</div>
-        </div>
-
-        <div class="project">
-          <div class="project-head">
-            <h3>COMHUB — Traffic Monitoring System</h3>
-            <span class="org">Smart Microwave Sensors</span>
-          </div>
-          <ul>
-            <li>Built solo from a blank repo to production: FastAPI + MQTT backend, React + Recharts + D3.js frontend.</li>
-            <li>Sub-200ms latency ingesting live data from 100+ road-intersection sensors.</li>
-          </ul>
-          <div class="stack-line">FastAPI · Python · MQTT · PostgreSQL · Docker · GitHub Actions</div>
-        </div>
-
-        <div class="project">
-          <div class="project-head">
-            <h3>Multi-Repo AutoPR &amp; Anti-Drift Agent</h3>
-            <span class="org">AI Developer Co-Pilot, Smart Microwave Sensors</span>
-          </div>
-          <ul>
-            <li>Architected an autonomous multi-repo agent using LangGraph state machines and FastMCP micro-servers for end-to-end feature development across microservices.</li>
-            <li>Engineered a dual-tier codebase RAG combining Tree-sitter AST parsing and Qdrant to isolate active domain code from foreign API contracts — cutting prompt token usage by 95%.</li>
-            <li>Enforced pre-push pipeline validation with a local Docker runner (linters, type checks, integration tests) and an automated self-healing loop prior to PR creation.</li>
-            <li>Built a zero-token anti-drift daemon using deterministic schema diffing (git diff, openapi-diff) to detect cross-service API drift and auto-generate draft PRs.</li>
-          </ul>
-          <div class="stack-line">Python · LangGraph · FastMCP (MCP) · Qdrant · Tree-sitter · Docker · Jira API · GitHub API</div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- EDUCATION / CERTS -->
-    <section id="education">
-      <div class="section-head">
-        <div class="eyebrow">Education &amp; Recognition</div>
-        <h2 class="section-title">Education, Certifications &amp; Languages</h2>
-      </div>
-
-      <div class="edu-grid">
-        <div class="edu-block">
-          <h3>B.Tech — Computer Science &amp; Engineering</h3>
-          <div class="sub">Harcourt Butler Technical University, Kanpur, India</div>
-          <div class="period">2013 – 2017</div>
-        </div>
-
-        <div class="edu-block">
-          <h3>Certifications &amp; Recognition</h3>
-          <ul>
-            <li>Camunda 7 Java Developer Certified · BPMN 2.0 Certified · Google Cloud Digital Leader</li>
-            <li>15 Walmart badges · Multiple Impact Driver &amp; Firefighter awards for P1 resolution</li>
-            <li>Certificate of Excellence – DSA in Python, Coding Ninjas (Top 10%)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="lang-line">
-        <b>Languages:</b> English (Fluent) · Hindi (Native) · German (Learning — A1)
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="section-head">
-        <div class="eyebrow">Contact</div>
-        <h2 class="section-title">Let's build something reliable</h2>
-      </div>
-      <div class="contact-block">
-        <p>
-          Open to senior backend and AI-backend roles across the EU, UK, Australia/NZ, UAE, and remote. Reach out
-          if you'd like to talk shop or work together.
-        </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:amit99.ag@gmail.com">amit99.ag@gmail.com</a>
-          <a class="btn btn-ghost" href="https://linkedin.com/in/amit-gautam-100" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-ghost" href="https://github.com/iamamit" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="wrap">
-    <div>© <span id="year"></span> Amit Gautam</div>
-    <div><a href="#home">Back to top ↑</a></div>
-  </footer>
-
-  <script src="js/main.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
