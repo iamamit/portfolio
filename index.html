@@ -78,15 +78,54 @@
 
       <nav class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>Home</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>About</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
           <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
         </ul>
       </nav>
 
+      <!-- home: a feed; newest post first. Copy a <li class="post"> block to add one. -->
+      <article class="home active" data-page="home">
+        <header>
+          <h2 class="h2 article-title">Home</h2>
+        </header>
+
+        <ol class="feed">
+          <li class="post">
+            <div class="post-meta mono"><time datetime="2026-09-29">29 Sep 2026</time><span class="post-tag">building</span></div>
+            <h3 class="h3 post-title">Making video editing feel like talking to an editor</h3>
+
+            <p>Recording a tutorial takes me an hour. Editing it takes days: cutting mistakes and pauses, levelling my voice, adding captions, and hand-making every little animation. Most of that is repetitive work a good assistant could do, if it could actually operate the editor. So I'm building that assistant, in three pieces.</p>
+
+            <ul class="post-parts">
+              <li>
+                <span class="part-name mono">codit</span>
+                <span class="part-status mono">in use</span>
+                <p>A chat panel inside DaVinci Resolve. I say what I want ("cut the silences", "my voice is too low here", "duck the music under speech") and it edits the timeline directly. It checks its own result, measuring the audio and even rendering it to listen back, and every change can be undone without losing my manual edits.</p>
+              </li>
+              <li>
+                <span class="part-name mono">codit-core</span>
+                <span class="part-status mono">in progress</span>
+                <p>The engine underneath, exposed as an MCP server so any AI agent can use it. Resolve's scripting API can't touch most of the audio mixer, effects or automation, so I reverse-engineered how Resolve stores them: a crawler clicks through the UI, records what changes on disk, and I fit the formulas. That's what lets codit set a compressor, draw a volume ramp or tune a de-esser directly.</p>
+              </li>
+              <li>
+                <span class="part-name mono">template engine</span>
+                <span class="part-status mono">19 templates</span>
+                <p>A library of motion-graphics templates (title cards, code steppers, diagrams, lower thirds) that render frame-exact to transparent video. Instead of writing animation code from scratch every time, the agent picks a template and fills in my words and timings. It's faster, cheaper, and every video keeps the same look. Each new animation becomes a template, so the library grows with every episode.</p>
+              </li>
+            </ul>
+
+            <p>Put together, they're the start of my own video editor: one where you describe the edit, the software does the repetitive work, and you stay in control of every change. I'm starting with what I know, tutorial and educational videos, and building it in public here.</p>
+
+            <div class="post-foot mono">$ next → codit uses the template engine directly · then the editor itself</div>
+          </li>
+        </ol>
+      </article>
+
       <!-- about -->
-      <article class="about active" data-page="about">
+      <article class="about" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>

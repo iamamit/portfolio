@@ -68,3 +68,19 @@ a.project-card:hover img { transform: scale(1.05); }
 /* photo avatar */
 .avatar-box { background: #07111f; padding: 0; overflow: hidden; border-radius: 50%; }
 .avatar-box img { width: 100%; height: 100%; object-fit: cover; }
+
+/* home feed */
+.feed { display: grid; gap: 20px; }
+.post { background: var(--border-gradient-onyx); border-radius: 14px; padding: 22px 24px; position: relative; z-index: 1; box-shadow: var(--shadow-2); }
+.post::before { content: ""; position: absolute; inset: 1px; background: var(--bg-gradient-jet); border-radius: inherit; z-index: -1; }
+.post-meta { display: flex; align-items: center; gap: 10px; color: var(--light-gray-70); font-size: 12px; margin-bottom: 8px; }
+.post-tag { color: var(--orange-yellow-crayola); border: 1px solid var(--jet); border-radius: 6px; padding: 1px 8px; }
+.post-title { color: var(--white-2); margin-bottom: 12px; line-height: 1.35; }
+.post > p { color: var(--light-gray); font-size: 15px; line-height: 1.7; margin-bottom: 14px; }
+.post-parts { display: grid; gap: 12px; margin: 6px 0 16px; }
+.post-parts li { border-left: 2px solid var(--orange-yellow-crayola); padding: 4px 0 4px 14px; }
+.part-name { display: inline !important; color: var(--orange-yellow-crayola); font-size: 14px; }
+.part-status { display: inline !important; margin-left: 8px; color: var(--light-gray-70); font-size: 11px; border: 1px solid var(--jet); border-radius: 6px; padding: 1px 6px; }
+.post-parts p { color: var(--light-gray); font-size: 14px; line-height: 1.65; margin-top: 6px; }
+.post-foot { color: var(--light-gray-70); font-size: 12px; border-top: 1px solid var(--jet); padding-top: 12px; }
+.contacts-list .contact-link { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; }
