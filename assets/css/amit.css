@@ -83,4 +83,5 @@ a.project-card:hover img { transform: scale(1.05); }
 .part-status { display: inline !important; margin-left: 8px; color: var(--light-gray-70); font-size: 11px; border: 1px solid var(--jet); border-radius: 6px; padding: 1px 6px; }
 .post-parts p { color: var(--light-gray); font-size: 14px; line-height: 1.65; margin-top: 6px; }
 .post-foot { color: var(--light-gray-70); font-size: 12px; border-top: 1px solid var(--jet); padding-top: 12px; }
-.contacts-list .contact-link { white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; }
+.contacts-list .contact-link { white-space: normal; overflow: visible; text-overflow: clip; }
+.contacts-list .contact-link.email { font-size: 13px; }
