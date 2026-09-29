@@ -48,5 +48,5 @@ form?.addEventListener('submit', (e) => {
   e.preventDefault();
   const d = new FormData(form);
   const body = `${d.get('message')}\n\n${d.get('fullname')} · ${d.get('email')}`;
-  location.href = `mailto:amit99.ag@gmail.com?subject=${encodeURIComponent('Hello from ' + d.get('fullname'))}&body=${encodeURIComponent(body)}`;
+  location.href = `mailto:amit2608.ag@gmail.com?subject=${encodeURIComponent('Hello from ' + d.get('fullname'))}&body=${encodeURIComponent(body)}`;
 });
